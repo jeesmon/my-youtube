@@ -1,0 +1,21 @@
+<table style="width: 100%">
+    {{#each .}}
+    <tr>
+        {{#each .}}
+            <td style="text-align: center">
+                <div class="card">
+                    <a href="#play/{{this.id}}" id="{{this.id}}" class="video-item">
+                    <span class="image-wrap " style="position:relative; display:inline-block; background:url({{this.thumbnail}}) no-repeat; background-size: 100% 100%; width: 100px; height: 100px;">
+                        <img src="{{this.thumbnail}}" width="100" style="opacity: 0;"/>
+                    </span>
+                    </a>
+                    <br/>
+                    <span>{{this.title}}</span>
+                    <br/>
+                    <span>{{this.duration}} secs</span>
+                </div>
+            </td>
+        {{/each}}
+    </tr>
+    {{/each}}
+</table>

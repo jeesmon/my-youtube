@@ -1,0 +1,25 @@
+<ul class="topcoat-list product-list">
+{{#.}}
+<li class="topcoat-list__item">
+    <a href="#" id="{{this.vid}}" class="play-video" >
+        <table>
+            <tr>
+                <td>
+                    <div class="card">
+                        <span class="image-wrap " style="position:relative; display:inline-block; background:url({{this.thumbnail}}) no-repeat; background-size: 100% 100%; width: 50px; height: 50px;">
+                            <img src="{{this.thumbnail}}" width="50" style="opacity: 0;"/>
+                        </span>            
+                    </div>
+                </td>
+                <td>
+                    {{this.title}}
+                    <br/>
+                    {{this.duration}} secs  
+                </td>
+            </tr>
+        </table>
+        <span class="chevron"></span>
+    </a>
+</li>
+{{/.}}
+</ul>
