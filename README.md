@@ -6,4 +6,4 @@ A simple phonegap app to search and add YouTube videos to different profiles.
 
 * AMD: require.js
 * MV*: Backbone.js
-* UI : Handlebars.js
+* UI : Handlebars.js, Topcoat
